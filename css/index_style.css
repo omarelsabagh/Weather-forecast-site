@@ -88,3 +88,17 @@ h1 {
     margin-top: 150;
     padding: 0 !important;
 }
+
+@media screen and (max-width:600px) {
+
+ .search {
+     width: 50% !important;
+     
+ }
+ .btnThing {
+     right: 130px!important;
+  
+   
+     
+ }   
+}
