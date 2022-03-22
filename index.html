@@ -1,0 +1,226 @@
+<html>
+    <head>
+      <title>Weather App</title>
+      <meta charset="UTF-8" />
+      <meta name="author" content="omar elsabagh" />
+      <meta name="description" content="weather app" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="keywords" content="html,css,js,ajax,weather" />
+
+      <link rel="icon" href="images/icon.png" />
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body class="bg-dark" >
+     
+
+
+   <div class="home  ">
+
+    
+      <div class="d-flex justify-content-center position-relative  ">
+        <h1>Smart Weather System</h1>
+ 
+        <input id="searching" class=" form-control w-25  position-absolute search " type="text" placeholder="Search City">
+        <button id="searchingBtn" type="submit" class="btnThing  btn btn-primary position-absolute  " >Search City</button>
+        <div id="errorMsgId" class="d-none  position-absolute">
+          <p class="text-danger">Sorry, this City is not on earth!!</p>
+          <p class="text-success">try again..</p>
+        </div>
+  
+      </div>
+     
+      <div class="content container ">
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="item ">
+              <div class="headItem  d-flex justify-content-between container-fluid align-items-center  ">
+                <span id="dayIndexId">Friday</span>
+                <span id="dateIndexId">25Jan</span>
+              </div>
+              <div class="hambola container">
+               
+                <h4 id="cityIndexId" class="city my-4">Cairo</h4>
+                <div class="degree d-flex align-items-center justify-content-around  ">
+                  <div>
+                    <h2 id="degreeIndexId" class="hoho d-inline-block"></h2>
+                  <h2 class="hoho d-inline-block"><sup>o</sup>C</h2>
+
+                  </div>
+                  
+                  <img id="icon1IndexId" alt="">
+
+                </div>
+                <h5 id="status1IndexId" class="status">sunny</h5>
+                <div class="row my-4 text-white">
+                  <div class="col-md-3">
+                    <div class="d-felx">
+                      <i class="fa-solid fa-umbrella"></i>
+                      <span id="humidityIndexId">65%</span>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+                    <div class="d-felx">
+                      <i class="fa-solid fa-wind"></i>
+                      <span id="windSpeedInedxId">65%</span>
+                    </div>
+
+                  </div>
+                  <div class="col-md-3">
+                    <div class="d-felx">
+                      <i class="fa-solid fa-compass"></i>
+                      <span id="windDirectionIndexId">65%</span>
+                    </div>
+
+                  </div>
+                  
+                </div>
+
+              </div>
+
+          
+            </div>
+          </div>
+          <!-- new item -->
+          <div class="col-md-4 ">
+            <div class="item ">
+              <div class="headItem2  d-flex justify-content-center container-fluid align-items-center  ">
+                <span class="nextDayIndexClass"></span>
+                
+              </div>
+              <div class="hambola2  container">
+               
+                
+              <div class="content2 text-center ">
+                <img class="icon2IndexClass" alt="">
+                <div>
+                  <h4  class="maxC2Class bigDegree mt-3 text-white d-inline-block"></h4>
+                  <h4 class="bigDegree text-white d-inline-block " ><sup>o</sup>C</h4>
+
+                </div>
+               <div>
+                <span class="minC2Class smallDegree text-white d-inline-block">30c</span>
+                <span class="smallDegree text-white d-inline-block"><sup>o</sup>C</span>
+
+               </div>
+                
+                <h5  class="status2 mt-4">sunny</h5>
+                
+              </div>
+            
+
+              </div>
+
+             
+            </div>
+          </div>
+         <!-- new item -->
+         <div class="col-md-4 ">
+          <div class="item ">
+            <div class="headItem2  d-flex justify-content-center container-fluid align-items-center  ">
+              <span class="nextDayIndexClass">Friday</span>
+              
+            </div>
+            <div class="hambola2  container">
+             
+              
+            <div class="content2 text-center ">
+              <img class="icon2IndexClass" alt="">
+              <div>
+                <h4  class="maxC2Class bigDegree mt-3 text-white d-inline-block"></h4>
+                <h4 class="bigDegree text-white d-inline-block " ><sup>o</sup>C</h4>
+
+              </div>
+              <div>
+                <span class="minC2Class smallDegree text-white d-inline-block">30c</span>
+                <span class="smallDegree text-white d-inline-block"><sup>o</sup>C</span>
+
+               </div>
+              <h5 class="status2 mt-4">sunny</h5>
+              
+            </div>
+          
+
+            </div>
+
+           
+          </div>
+        </div>
+         
+          
+          
+        </div>
+      </div>
+
+
+      
+   
+  
+    
+
+   </div>
+   
+
+
+
+    
+               
+
+            
+           
+
+
+  
+  
+
+      
+
+       
+
+
+    
+
+
+
+
+
+
+        
+        
+
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+
+
+      <!-- <nav class="footer navbar navbar-expand-lg navbar-dark bg-dark p-5">
+              <div class="container-fluid">
+            
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+                    
+             
+             
+                  
+                  
+              
+                  
+               
+                  </ul>
+                 
+                </div>
+              </div>
+            </nav>
+  
+          -->
